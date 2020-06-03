@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Freedom Tech</string>
+    <string name="inicio_sesion_textview">Inicio de sesion</string>
+    <string name="registro_sesion_textview">Registrarse</string>
+    <string name="usuario_edittext">Usuario</string>
+    <string name="email_edittext">Correo electronico</string>
+    <string name="contrasena_edittext">Contraseña</string>
+    <string name="login_button">Iniciar sesion</string>
+    <string name="register_button">Registrarse</string>
+    <string name="crear_button">Crear presupuesto</string>
+    <string name="ver_button">Ver presupuesto</string>
+    <string name="borrar_button">Borrar presupuesto</string>
+    <string name="nombre_usuario">Nombre de usuario</string>
+    <string name="id_presupuesto">ID Presupuesto</string>
+    <string name="ver_cuenta">Ver cuenta</string>
+    <string name="version_app">Version de Freedom Tech</string>
+    <string name="terminos">Terminos y condiciones</string>
+    <string name="acerca_de_freedomtech">Acerca de Freedom Tech</string>
+
+    <!-- TABLA PCS -->
+
+    <string name="enlace">Descripcion/Enlace</string>
+    <string name="precio_componente">Precio</string>
+    <string name="descripcion_pc">Descripcion PC</string>
+    <string name="procesador">Procesador</string>
+    <string name="placa_base">Placa base</string>
+    <string name="memoria_ram">Memoria RAM</string>
+    <string name="kit_placa_procesador_ram">Kit CPU, PLACA, RAM</string>
+    <string name="disco_duro_ssd">Disco duro SSD</string>
+    <string name="disco_duro_ssd_2">Disco duro SSD 2</string>
+    <string name="disco_duro_hdd">Disco duro HDD</string>
+    <string name="disco_duro_hdd2">Disco duro HDD2</string>
+    <string name="fuente_alimentacion">Fuente alimentacion</string>
+    <string name="torre_caja">Torre/Caja</string>
+    <string name="refrigeracion">Refrigeracion</string>
+    <string name="tarjeta_grafica">Tarjeta grafica</string>
+    <string name="tarjeta_red">Tarjeta red</string>
+    <string name="monitor">Monitor</string>
+    <string name="teclado">Teclado</string>
+    <string name="raton">Raton</string>
+    <string name="cascos">Auriculares</string>
+    <string name="otros">Otros</string>
+    <string name="precio_total">Precio total</string>
+
+    <!--MENU-->
+
+    <string name="acerca_de">Acerca de</string>
+    <string name="cuenta">Cuenta</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+
+</resources>

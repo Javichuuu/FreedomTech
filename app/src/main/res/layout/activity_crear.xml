@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8171616"
+    tools:context=".CrearActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rectangulo_transparente"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/crear_button"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <!--<TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/usuario_edittext"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/nombre_usuario"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="text">
+        </EditText>-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/descripcion_pc"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:hint="@string/descripcion_pc"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="text">
+        </EditText>
+
+        <!--COMPONENTES-->
+
+        <!--PROCESADOR-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/procesador"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextProcesador"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioProcesador"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--PLACA-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/placa_base"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextPlaca"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioPlaca"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--MEMORIA RAM-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/memoria_ram"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextMemoria"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioMemoria"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--KIT-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/kit_placa_procesador_ram"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextKit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioKit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--SSD-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/disco_duro_ssd"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextSSD"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioSSD"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--SSD2-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/disco_duro_ssd_2"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextSSD2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioSSD2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--HDD-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/disco_duro_hdd"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextHDD"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioHDD"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--HDD2-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/disco_duro_hdd2"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextHDD2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioHDD2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+
+        <!--FUENTE-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/fuente_alimentacion"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextFuente"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioFuente"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--TORRE-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/torre_caja"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextTorre"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioTorre"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--REFRIGERACION-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/refrigeracion"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextRefrigeracion"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioRefrigeracion"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--TARJETA GRAFICA-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/tarjeta_grafica"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextGPU"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioGPU"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--TARJETA DE RED-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/tarjeta_red"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextNetwork"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioNetwork"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--MONITOR-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/monitor"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextMonitor"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioMonitor"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--TECLADO-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/teclado"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextTeclado"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioTeclado"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--RATON-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/raton"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextRaton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioRaton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--CASCOS-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/cascos"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextCascos"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioCascos"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--OTROS-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/otros"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/editTextOtros"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enlace"
+            android:inputType="text">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextPrecioOtros"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <!--PRECIO TOTAL-->
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="@string/precio_total"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editTextPrecioTotal"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:hint="@string/precio_componente"
+            android:text="0"
+            android:inputType="numberDecimal">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonCrearPresupuesto"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rectangulo_redondo"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:onClick="Crear_Presupuesto"
+            android:text="@string/crear_button" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

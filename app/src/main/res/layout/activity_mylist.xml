@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mylist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="@string/descripcion_pc"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+                <TextView
+                    android:id="@+id/descripcion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            </TableRow>
+
+        <!--PROCESADOR-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/procesador"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/procesador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioProcesador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--PLACA BASE-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/placa_base"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/placa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioPlaca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--MEMORIA-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/memoria_ram"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/memoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioMemoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--KIT-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/kit_placa_procesador_ram"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/kit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioKit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--SSD1-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/disco_duro_ssd"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/SSD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioSSD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--SSD2-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/disco_duro_ssd_2"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/SSD2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioSSD2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--HDD-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/disco_duro_hdd"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/HDD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioHDD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--HDD2-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/disco_duro_hdd2"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/HDD2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioHDD2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--FUENTE-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/fuente_alimentacion"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/fuente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioFuente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--TORRE-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/torre_caja"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/torre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioTorre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--REFRIGERACION-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/refrigeracion"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/refrigeracion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioRefrigeracion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--GPU-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/tarjeta_grafica"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/gpu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioGPU"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--NETWORK-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/tarjeta_red"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/network"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioNetwork"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--MONITOR-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/monitor"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/monitor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioMonitor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--TECLADO-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/teclado"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/teclado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioTeclado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--RATON-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/raton"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/raton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioRaton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--AURICULARES-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/cascos"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/cascos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioCascos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--OTROS-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/otros"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/otros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_componente"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioOtros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        <!--PRECIO-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="@string/precio_total"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+            <TextView
+                android:id="@+id/precioTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView.ListSeparator" />
+        </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
